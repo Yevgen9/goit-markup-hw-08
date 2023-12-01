@@ -11,13 +11,16 @@
   background-color: $button-text-color;
 
   border-bottom: 1px solid #ececec;
-}
 
-@media screen and (min-width: 768px) {
-  .wrapper-nav {
+  @media screen and (min-width: 768px) {
     display: flex;
 
     min-width: 768px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    min-width: 1600px;
+    justify-content: center;
   }
 }
 
@@ -167,12 +170,20 @@
   margin-left: 88px;
   margin-top: 32px;
 
+  @media screen and (min-width: 1600px) {
+    margin-left: 93px;
+  }
+
   & .item:not(:last-child) {
     margin-right: 50px;
   }
 
   & .item:nth-child(3) {
     margin-right: 96px;
+
+    @media screen and (min-width: 1600px) {
+      margin-right: 315px;
+    }
   }
 }
 
@@ -228,10 +239,12 @@ a.link.current::after {
 }
 
 .contacts {
-  // display: inline-flex;
-  // flex-direction: column;
-
   padding-top: 21px;
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    align-items: center;
+  }
 
   & .item {
     display: flex;
@@ -241,10 +254,18 @@ a.link.current::after {
 
   & .item:nth-child(1) {
     padding-top: 21px;
+
+    @media screen and (min-width: 1600px) {
+      padding: 0;
+    }
   }
 
   & .item:not(:last-child) {
     padding-bottom: 10px;
+
+    @media screen and (min-width: 1600px) {
+      padding: 0;
+    }
   }
 
   & .link {
@@ -289,6 +310,10 @@ a.link.current::after {
     background-image: url(../images/smartphone.svg);
 
     transition: $transition-standart;
+
+    @media screen and (min-width: 1600px) {
+      margin-left: 30px;
+    }
   }
 
   & .item:nth-child(1):hover::before,
@@ -314,11 +339,6 @@ a.link.current::after {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .contacts {
-    display: flex;
-  }
-}
 .wrapper-nav .link {
   transition: $transition-standart;
 

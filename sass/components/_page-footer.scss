@@ -5,22 +5,47 @@
 
 .page-footer {
   display: flex;
-
+  flex-direction: column;
+  align-items: center;
   width: 480px;
 
   background-color: $background-color;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 0.42px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    display: block;
+  }
+
+  @media screen and (min-width: 1599px) {
+    min-width: 1600px;
+  }
 }
 
 .adress.list {
-  width: 480px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 
   margin-bottom: 60px;
+  margin-left: 137px;
   padding: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1599px) {
+    align-items: start;
+
+    margin-top: 60px;
+    margin-left: 215px;
+  }
+
+  & .item {
+    display: inline-block;
+  }
 }
 .adress .item + .item {
   margin-top: 8px;
@@ -36,6 +61,11 @@
   padding: 0;
   margin: 0;
 
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.42px;
+
   color: $button-text-color;
 }
 
@@ -45,6 +75,26 @@
   color: $accent-color;
 
   transition: $transition-standart;
+}
+
+//                   SOCIAL LINKS
+
+.social-footer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-left: 137px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    margin-top: 65px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    margin-top: 72px;
+    margin-left: 70px;
+  }
 }
 
 .social-footer .title {
@@ -60,10 +110,6 @@
 }
 
 .footer-social {
-  display: inline-flex;
-
-
-
   & .item {
     display: inline-flex;
 
@@ -100,6 +146,21 @@
 
 /*           ФУТЕР ФОРМА */
 
+.form-footer {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1599px) {
+    display: inline-flex;
+
+    margin-left: 93px;
+    margin-top: 72px;
+  }
+}
+
 .footer-text {
   color: $button-text-color;
   font-size: 14px;
@@ -123,6 +184,14 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   outline: none;
+
+  &:focus,
+  &:hover {
+    outline: $accent-color;
+    border-color: $accent-color;
+
+    transform: $transition-standart;
+  }
 }
 
 .footer-btn {
@@ -148,6 +217,14 @@
   letter-spacing: 0.96px;
 
   transition: $transition-bgColor;
+
+  @media screen and (min-width: 1599px) {
+    position: absolute;
+    top: 35px;
+    left: 370px;
+
+    margin-bottom: 0;
+  }
 
   &::after {
     content: "";
