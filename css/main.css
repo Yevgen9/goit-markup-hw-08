@@ -107,12 +107,6 @@ body {
     display: none;
   }
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .wrapper-nav {
   position: relative;
   display: -webkit-inline-box;
@@ -504,12 +498,6 @@ body {
     display: none;
   }
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 /* ФУТЕР */
 .page-footer {
   display: -webkit-box;
@@ -531,7 +519,7 @@ img {
     display: block;
   }
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .page-footer {
     min-width: 1600px;
   }
@@ -559,7 +547,7 @@ img {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .adress.list {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -682,7 +670,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .form-footer {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -748,7 +736,7 @@ img {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .footer-btn {
     position: absolute;
     top: 35px;
@@ -818,14 +806,9 @@ body {
     display: none;
   }
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 body {
-  max-width: 480px;
+  min-width: 320px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -871,24 +854,37 @@ body {
   display: inline-block;
   width: 480px;
   height: 400px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgMob\ img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgMob\ img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-hero/bgMob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero/bgMob.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay .overlay {
+    background-image: url("../images/bg-hero/bgMob@2.jpg");
+  }
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    width: 768px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-hero/bgTab.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero/bgTab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay .overlay {
+    background-image: url("../images/bg-hero/bgTab@2.jpg");
   }
 }
 @media screen and (min-width: 1600px) {
   .overlay {
     min-width: 1600px;
     min-height: 600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-img.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-hero/bgDesc.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero/bgDesc.jpg);
+  }
+}
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
+  .overlay .overlay {
+    background-image: url("../images/bg-hero/bgDesc@2.jpg");
   }
 }
 
@@ -988,12 +984,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 581px;
-  }
-}
 form {
   position: relative;
   margin-left: auto;
@@ -1012,7 +1002,7 @@ form {
   letter-spacing: 0.6px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .form-text {
     width: 100%;
   }
@@ -1036,7 +1026,7 @@ form {
           transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .form-field {
     width: 448px;
   }
@@ -1152,7 +1142,7 @@ form {
           transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .form-comment {
     width: 448px;
   }
@@ -1193,7 +1183,7 @@ form {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .form-policy {
     font-size: 14px;
     line-height: 1.7;
@@ -1208,7 +1198,7 @@ form {
   text-decoration-line: underline;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .policy-text {
     font-size: 14px;
     line-height: 1.7;
@@ -1236,7 +1226,7 @@ form {
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .check-icon {
     margin-left: 52px;
   }
@@ -1560,7 +1550,7 @@ form {
     min-width: 768px;
   }
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .ourteam {
     width: 1200px;
     padding-bottom: 94px;
@@ -1578,7 +1568,7 @@ form {
   line-height: normal;
   letter-spacing: 0.84px;
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .ourteam-title {
     padding-bottom: 50px;
     padding-top: 94px;
@@ -1625,7 +1615,7 @@ form {
             flex-direction: column;
   }
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .ourteam-list .list-item {
     margin-bottom: 30px;
   }
@@ -1638,25 +1628,14 @@ form {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1599px) {
+@media screen and (min-width: 768px) and (min-width: 1600px) {
   .ourteam-list .list-item:nth-child(3) {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .ourteam-list .list-item:nth-child(3) {
     margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .team-img {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1599px) {
-  .team-img {
-    width: 270px;
   }
 }
 
@@ -1734,7 +1713,7 @@ form {
 .clients {
   text-align: center;
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .clients {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1758,7 +1737,7 @@ form {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .clients.list {
     display: inline-block;
   }
@@ -1773,7 +1752,7 @@ form {
   line-height: normal;
   letter-spacing: 0.84px;
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .clients .title {
     margin-top: 94px;
     margin-bottom: 50px;
@@ -1794,7 +1773,7 @@ form {
     padding: 16px 60px;
   }
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .clients-item {
     padding: 16px 32px;
     margin-bottom: 94px;
@@ -1833,7 +1812,7 @@ form {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 1599px) {
+@media screen and (min-width: 1600px) {
   .clients-item:nth-child(3) {
     margin-right: 30px;
   }

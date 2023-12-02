@@ -71,17 +71,17 @@
 
           <ul class="menu-social">
             <a href="" class="link" target="_blank" rel="aria-label">
-              <li class="item">Instagram</li></a
-            >
+              <li class="item">Instagram</li>
+            </a>
             <a href="" class="link" target="_blank" rel="aria-label">
-              <li class="item">Twitter</li></a
-            >
+              <li class="item">Twitter</li>
+            </a>
             <a href="" class="link" target="_blank" rel="aria-label">
-              <li class="item">Facebook</li></a
-            >
+              <li class="item">Facebook</li>
+            </a>
             <a href="" class="link" target="_blank" rel="aria-label">
-              <li class="item">LinkedIn</li></a
-            >
+              <li class="item">LinkedIn</li>
+            </a>
           </ul>
         </div>
 
@@ -265,28 +265,50 @@
               <div class="label">
                 <h3 class="label-title">Десктопні додатки</h3>
               </div>
-              <img src="./images/box1.jpg" alt="друкує" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing/box1.jpg   1x,
+                    ./images/doing/box1@2.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img src="./images/doing/box1.jpg" alt="друкує" />
+              </picture>
             </li>
 
             <li class="list-item">
               <div class="label">
                 <h3 class="label-title">Мобільні додатки</h3>
               </div>
-              <img
-                src="./images/box2.jpg"
-                alt="дивиться в смартфон"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing/box2.jpg   1x,
+                    ./images/doing/box2@2.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img src="./images/doing/box2.jpg" alt="дивиться в смартфон" />
+              </picture>
             </li>
             <li class="list-item">
               <div class="label">
                 <h3 class="label-title">Дизайнерські рішення</h3>
               </div>
-              <img
-                src="./images/box3.jpg"
-                alt="дивиться в планшет"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/doing/box3.jpg   1x,
+                    ./images/doing/box3@2.jpg 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+
+                <img src="./images/doing/box3.jpg" alt="дивиться в планшет" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -299,16 +321,31 @@
           <h2 class="ourteam-title">Наша команда</h2>
           <ul class="ourteam-list">
             <li class="list-item">
-              <a href="">
+              <picture>
+                <source
+                  srcset="./images/team-img/team1-desc.jpg 1x,
+                  ./images/team img/team1-desc@2x.jpg 2x"
+                  media="(min-width: 1600px)"
+                />
+                <source
+                  srcset="./images/team-img/team1-tab.jpg 1x,
+                  ./images/team img/team1-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team-img/team1-mob.jpg 1x,
+                  ./images/team img/team1-mob@2x.jpg 2x"
+                  media="(max-width: 480px)"
+                />
+
                 <img
                   class="team-img"
-                  src="./images/team1.jpg"
+                  src="./images/team-img/team1-mob.jpg"
                   alt="Ігор Дем'яненко"
-                  width="450"
                 />
-                <h3 class="title">Ігор Дем'яненко</h3>
-                <p class="text">Product Designer</p>
-              </a>
+              </picture>
+              <h3 class="title">Ігор Дем'яненко</h3>
+              <p class="text">Product Designer</p>
 
               <ul class="social list">
                 <li class="item">
@@ -344,16 +381,31 @@
             </li>
 
             <li class="list-item">
-              <a href="">
+              <picture>
+                <source
+                  srcset="./images/team-img/team2-desc.jpg 1x,
+                  ./images/team img/team2-desc@2x.jpg 2x"
+                  media="(min-width: 1600px)"
+                />
+                <source
+                  srcset="./images/team-img/team2-tab.jpg 1x,
+                  ./images/team img/team2-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team-img/team2-mob.jpg 1x,
+                  ./images/team img/team2-mob@2x.jpg 2x"
+                  media="(max-width: 480px)"
+                />
+
                 <img
                   class="team-img"
-                  src="./images/team2.jpg"
+                  src="./images/team-img/team2-mob.jpg"
                   alt="Ольга Рєпіна"
-                  width="450"
                 />
-                <h3 class="title">Ольга Рєпіна</h3>
-                <p class="text">Frontend Developer</p>
-              </a>
+              </picture>
+              <h3 class="title">Ольга Рєпіна</h3>
+              <p class="text">Frontend Developer</p>
 
               <ul class="social list">
                 <li class="item">
@@ -389,16 +441,31 @@
             </li>
 
             <li class="list-item">
-              <a href="">
+              <picture>
+                <source
+                  srcset="./images/team-img/team3-desc.jpg 1x,
+                  ./images/team img/team3-desc@2x.jpg 2x"
+                  media="(min-width: 1600px)"
+                />
+                <source
+                  srcset="./images/team-img/team3-tab.jpg 1x,
+                  ./images/team img/team3-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team-img/team3-mob.jpg 1x,
+                  ./images/team img/team3-mob@2x.jpg 2x"
+                  media="(max-width: 480px)"
+                />
+
                 <img
                   class="team-img"
-                  src="./images/team3.jpg"
+                  src="./images/team-img/team3-mob.jpg"
                   alt="Микола Тарасов"
-                  width="450"
                 />
-                <h3 class="title">Микола Тарасов</h3>
-                <p class="text">Marketing</p>
-              </a>
+              </picture>
+              <h3 class="title">Микола Тарасов</h3>
+              <p class="text">Marketing</p>
 
               <ul class="social list">
                 <li class="item">
@@ -434,16 +501,31 @@
             </li>
 
             <li class="list-item">
-              <a href="">
+              <picture>
+                <source
+                  srcset="./images/team-img/team4-desc.jpg 1x,
+                  ./images/team img/team4-desc@2x.jpg 2x"
+                  media="(min-width: 1600px)"
+                />
+                <source
+                  srcset="./images/team-img/team4-tab.jpg 1x,
+                  ./images/team img/team4-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/team-img/team4-mob.jpg 1x,
+                  ./images/team img/team4-mob@2x.jpg 2x"
+                  media="(max-width: 480px)"
+                />
+
                 <img
                   class="team-img"
-                  src="./images/team4.jpg"
+                  src="./images/team-img/team4-mob.jpg"
                   alt="Михайло Єрмаков"
-                  width="450"
                 />
-                <h3 class="title">Михайло Єрмаков</h3>
-                <p class="text">UI Designer</p>
-              </a>
+              </picture>
+              <h3 class="title">Михайло Єрмаков</h3>
+              <p class="text">UI Designer</p>
 
               <ul class="social list">
                 <li class="item">

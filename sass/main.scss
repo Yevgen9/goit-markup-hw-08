@@ -5,7 +5,8 @@
 @import "./components/base";
 
 body {
-  max-width: 480px;
+  min-width: 320px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -13,6 +14,7 @@ body {
 @media screen and (min-width: 768px) {
   body {
     min-width: 768px;
+
     margin-left: auto;
     margin-right: auto;
   }
@@ -55,6 +57,7 @@ body {
 
 .overlay {
   display: inline-block;
+
   width: 480px;
   height: 400px;
 
@@ -63,14 +66,35 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bgMob\ img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+    url(../images/bg-hero/bgMob.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url("../images/bg-hero/bgMob@2.jpg");
+    }
+  }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-width: 768px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-hero/bgTab.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .overlay {
+        background-image: url("../images/bg-hero/bgTab@2.jpg");
+      }
+    }
   }
 
   @media screen and (min-width: 1600px) {
@@ -81,7 +105,16 @@ body {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/bg-img.jpg);
+      url(../images/bg-hero/bgDesc.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .overlay {
+        background-image: url("../images/bg-hero/bgDesc@2.jpg");
+      }
+    }
   }
 }
 
@@ -181,12 +214,12 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 581px;
-  }
-}
+// @media screen and (min-width: 1600px) {
+//   .modal {
+//     width: 528px;
+//     height: 581px;
+//   }
+// }
 
 form {
   position: relative;
@@ -209,7 +242,7 @@ form {
   letter-spacing: 0.6px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .form-text {
     width: 100%;
   }
@@ -231,7 +264,7 @@ form {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .form-field {
     width: 448px;
   }
@@ -319,7 +352,7 @@ form {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .form-comment {
     width: 448px;
   }
@@ -361,7 +394,7 @@ form {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .form-policy {
     font-size: 14px;
     line-height: 1.7;
@@ -377,7 +410,7 @@ form {
   text-decoration-line: underline;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .policy-text {
     font-size: 14px;
     line-height: 1.7;
@@ -407,7 +440,7 @@ form {
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .check-icon {
     margin-left: 52px;
   }
@@ -689,7 +722,7 @@ form {
     min-width: 768px;
   }
 
-  @media screen and (min-width: 1599px) {
+  @media screen and (min-width: 1600px) {
     width: 1200px;
     padding-bottom: 94px;
   }
@@ -707,7 +740,7 @@ form {
   line-height: normal;
   letter-spacing: 0.84px;
 
-  @media screen and (min-width: 1599px) {
+  @media screen and (min-width: 1600px) {
     padding-bottom: 50px;
     padding-top: 94px;
 
@@ -745,7 +778,7 @@ form {
       flex-direction: column;
     }
 
-    @media screen and (min-width: 1599px) {
+    @media screen and (min-width: 1600px) {
       margin-bottom: 30px;
     }
   }
@@ -757,24 +790,14 @@ form {
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
 
-      @media screen and (min-width: 1599px) {
+      @media screen and (min-width: 1600px) {
         margin-bottom: 30px;
       }
     }
 
-    @media screen and (min-width: 1599px) {
+    @media screen and (min-width: 1600px) {
       margin-bottom: 30px;
     }
-  }
-}
-
-.team-img {
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
-
-  @media screen and (min-width: 1599px) {
-    width: 270px;
   }
 }
 
@@ -850,7 +873,7 @@ form {
 .clients {
   text-align: center;
 
-  @media screen and (min-width: 1599px) {
+  @media screen and (min-width: 1600px) {
     display: flex;
     flex-direction: column;
   }
@@ -861,7 +884,7 @@ form {
     justify-content: center;
     align-items: center;
 
-    @media screen and (min-width: 1599px) {
+    @media screen and (min-width: 1600px) {
       display: inline-block;
     }
   }
@@ -877,7 +900,7 @@ form {
     line-height: normal;
     letter-spacing: 0.84px;
 
-    @media screen and (min-width: 1599px) {
+    @media screen and (min-width: 1600px) {
       margin-top: 94px;
       margin-bottom: 50px;
     }
@@ -897,7 +920,7 @@ form {
     padding: 16px 60px;
   }
 
-  @media screen and (min-width: 1599px) {
+  @media screen and (min-width: 1600px) {
     padding: 16px 32px;
     margin-bottom: 94px;
   }
@@ -941,7 +964,7 @@ form {
 }
 
 .clients-item:nth-child(3) {
-  @media screen and (min-width: 1599px) {
+  @media screen and (min-width: 1600px) {
     margin-right: 30px;
   }
 }
